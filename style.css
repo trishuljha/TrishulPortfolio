@@ -273,5 +273,27 @@ h2 {
 .contact-card:hover {
     box-shadow: 0 20px 60px rgba(88, 166, 255, 0.25);
 }
+/* Button Active Feedback */
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* Focus Glow when navigated */
+.section:target,
+.section.focused {
+    animation: focusGlow 1.5s ease;
+}
+
+@keyframes focusGlow {
+    0% {
+        box-shadow: 0 0 0 rgba(88, 166, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(88, 166, 255, 0.35);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(88, 166, 255, 0);
+    }
+}
 
 
