@@ -119,3 +119,48 @@ if(textElement) {
     }
     document.addEventListener('DOMContentLoaded', typeEffect);
 }
+
+// =====================
+// SECTION SCROLL REVEAL
+// =====================
+const sections = document.querySelectorAll('.section');
+
+const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+            section.classList.add('visible');
+        }
+    });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+
+// =====================
+// PARALLAX CARD MOTION
+// =====================
+document.querySelectorAll('.glass').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const rotateX = ((y / rect.height) - 0.5) * 10;
+        const rotateY = ((x / rect.width) - 0.5) * -10;
+
+        card.style.transform = `
+            scale(1.05)
+            rotateX(${rotateX}deg)
+            rotateY(${rotateY}deg)
+        `;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = "scale(1)";
+    });
+});
+
