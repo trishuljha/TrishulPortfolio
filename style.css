@@ -210,3 +210,68 @@ h2 {
     box-shadow: 0 10px 30px rgba(88, 166, 255, 0.25);
 }
 
+/* ===================== */
+/* CONTACT SECTION UPGRADE */
+/* ===================== */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-card {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-tagline {
+    font-size: 1.2rem;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+/* Contact Info Layout */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    transition: transform 0.3s ease;
+}
+
+.contact-item i {
+    color: #58a6ff;
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: #c9d1d9;
+    text-decoration: none;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+/* CTA Buttons */
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Subtle Glow on Hover */
+.contact-card:hover {
+    box-shadow: 0 20px 60px rgba(88, 166, 255, 0.25);
+}
+
+
