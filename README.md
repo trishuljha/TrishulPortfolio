@@ -3,7 +3,7 @@
 A highly interactive, responsive portfolio website featuring a 3D background scene powered by **Three.js**. This project serves as a central hub for my work as a Backend Engineer and Competitive Programmer.
 
 ## 🚀 Live Demo
-[Link to your Vercel website here]
+(https://trishul-portfolio.vercel.app/)
 
 ## 🛠 Tech Stack
 * **Frontend:** HTML5, CSS3 (Glassmorphism UI), Vanilla JavaScript
