@@ -164,3 +164,26 @@ document.querySelectorAll('.glass').forEach(card => {
     });
 });
 
+// =====================
+// VIEW WORK BUTTON FIX
+// =====================
+const viewWorkBtn = document.getElementById('viewWorkBtn');
+const projectSection = document.getElementById('projects');
+
+if (viewWorkBtn && projectSection) {
+    viewWorkBtn.addEventListener('click', () => {
+        projectSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        // Visual confirmation
+        projectSection.classList.add('focused');
+
+        setTimeout(() => {
+            projectSection.classList.remove('focused');
+        }, 1500);
+    });
+}
+
+
